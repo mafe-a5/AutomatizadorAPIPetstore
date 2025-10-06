@@ -29,6 +29,14 @@
             <version>${logback.version}</version>
         </dependency>
 
+        <!-- Karate DSL -->
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-junit5</artifactId>
+            <version>1.4.0</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Serenity Dependencies -->
         <dependency>
             <groupId>net.serenity-bdd</groupId>
@@ -95,6 +103,18 @@
             <version>3.0.6</version>
         </dependency>
 
+        <!-- Forzar la versión Karate -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.13</version>
+        </dependency>
+
         <!-- General test libraries -->
         <dependency>
             <groupId>junit</groupId>
@@ -156,8 +176,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
