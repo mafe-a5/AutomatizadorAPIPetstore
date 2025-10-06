@@ -1,0 +1,2 @@
+# AutomatizadorAPIPetstore
+Examen API - NTT
